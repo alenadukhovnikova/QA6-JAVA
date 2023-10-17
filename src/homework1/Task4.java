@@ -1,8 +1,6 @@
-package lesson2;
+package homework1;
 
-import java.util.Arrays;
-
-public class Homework1 {
+public class Task4 {
     public static void main(String[] args) {
       int a=7;
       int b=9;

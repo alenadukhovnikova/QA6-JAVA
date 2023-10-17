@@ -1,4 +1,4 @@
-package lesson3;
+package homework2;
 
 public class Task2 {
    // Создать строку string = "Testing, is my favourite job".

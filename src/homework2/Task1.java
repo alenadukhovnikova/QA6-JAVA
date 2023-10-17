@@ -1,6 +1,6 @@
-package lesson3;
+package homework2;
 
-public class Homework2 {
+public class Task1 {
    // Создать переменную string1 = "This line that i want to cut, cause it is too long".
    // Создать строку string2 в которой должно быть помещено значение строки string1,
    // Обрезанное до "This line that i want to cut, cause".
