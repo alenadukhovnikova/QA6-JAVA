@@ -12,15 +12,14 @@ public class Task1 {
    public static void main(String[] args) {
        String string1 = "This line that i want to cut, cause it is too long";
        String string2  = string1.substring(0, string1.length()-15);
-       String string3 = string2.concat(" it is perfect");
+       String string3 = string1.replace("This line that i", "This line that don't").concat(" it is perfect");
        System.out.println(string1);
        System.out.println(string1.length());
        System.out.println(string2);
        System.out.println(string2.length());
+       System.out.println(string3);
+       System.out.println(string3.length());
 
-
-       System.out.println(string3.charAt(15));
-       System.out.println(string3.replace("i", "don't").length());
 
    }
 
