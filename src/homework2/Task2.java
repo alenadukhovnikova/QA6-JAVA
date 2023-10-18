@@ -34,13 +34,17 @@ public class Task2 {
                + lenght5.length();
        System.out.println(result5);
 
-       int countOfSymbols1 = lenght1.length();
-       int countOfSymbols2 = lenght2.length();
-       int countOfSymbols3 = lenght3.length();
-       int countOfSymbols4 = lenght4.length();
-       int countOfSymbols5 = lenght5.length();
+       //int countOfSymbols1 = lenght1.length();
+       //int countOfSymbols2 = lenght2.length();
+       //int countOfSymbols3 = lenght3.length();
+       //int countOfSymbols4 = lenght4.length();
+      // int countOfSymbols5 = lenght5.length();
 
-       System.out.println(countOfSymbols1 > countOfSymbols2 && countOfSymbols1 > countOfSymbols3 && countOfSymbols1 > countOfSymbols4 && countOfSymbols1 > countOfSymbols5);
+       boolean boo1 = lenght1.length()>lenght2.length() && lenght1.length() > lenght2.length() && lenght1.length() > lenght3.length()
+       && lenght1.length() > lenght4.length() && lenght1.length()> lenght5.length();
+       System.out.println(boo1);
+
+       //System.out.println(countOfSymbols1 > countOfSymbols2 && countOfSymbols1 > countOfSymbols3 && countOfSymbols1 > countOfSymbols4 && countOfSymbols1 > countOfSymbols5);
 
 
    }
