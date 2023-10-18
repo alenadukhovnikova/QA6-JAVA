@@ -40,8 +40,7 @@ public class Task2 {
        int countOfSymbols4 = lenght4.length();
        int countOfSymbols5 = lenght5.length();
 
-       System.out.println(countOfSymbols1 > countOfSymbols2 && countOfSymbols1 > countOfSymbols3 &&
-               countOfSymbols1 > countOfSymbols4 && countOfSymbols1 > countOfSymbols5);
+       System.out.println(countOfSymbols1 > countOfSymbols2 && countOfSymbols1 > countOfSymbols3 && countOfSymbols1 > countOfSymbols4 && countOfSymbols1 > countOfSymbols5);
 
 
    }
