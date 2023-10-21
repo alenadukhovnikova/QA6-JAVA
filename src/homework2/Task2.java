@@ -34,7 +34,7 @@ public class Task2 {
                + lenght5.length();
        System.out.println(result5);
 
-       //int countOfSymbols1 = lenght1.length();
+      //  int countOfSymbols1 = Integer.parseInt(lenght1.length());
        //int countOfSymbols2 = lenght2.length();
        //int countOfSymbols3 = lenght3.length();
        //int countOfSymbols4 = lenght4.length();
