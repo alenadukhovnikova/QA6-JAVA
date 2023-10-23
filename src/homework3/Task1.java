@@ -12,12 +12,13 @@ public class Task1 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("введите строку : Я тестирую замечательно. Что еще нужно?");
         String string1 = scanner.next();
+
         System.out.println(string1);
         String string2 = string1.substring(1);
         System.out.println(scanner.next());
-        String string3 = string2.substring(9);
+        String string3 = string1.substring(9);
         System.out.println(scanner.next());
-        String string4 = string3.substring(14);
+        String string4 = string1.substring(24);
         System.out.println(scanner.next());
        // System.out.println(scanner.next() + scanner.next()+scanner.next() );
     }

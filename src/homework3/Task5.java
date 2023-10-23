@@ -11,7 +11,7 @@ public class Task5 {
         System.out.println("введите два числа и один из символов действия -, +, %, /, * ");
         int x = scanner.nextInt();
         int y = scanner.nextInt();
-        char z;
+
 
         boolean isAddition = scanner.nextBoolean();
         boolean isSubtraction = scanner.nextBoolean();
