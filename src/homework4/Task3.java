@@ -15,31 +15,45 @@ public class Task3 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("enter maximum value of metall: ");
         int maxValue = scanner.nextInt();
-        System.out.println("enter value of metall in stok: ");
-        int stokValue = scanner.nextInt();
-
+        int value = 0;
+        while (value <= maxValue) {
+            if (value == maxValue) {
+            System.out.println("the stock is full");
+            break;
+        }
         System.out.println("enter value of metall in delivery: ");
         int valueOfMetal = scanner.nextInt();
-        while (valueOfMetal <= maxValue-stokValue) {
-            int freeValue = maxValue - stokValue;
-            if (valueOfMetal > freeValue) {
-                System.out.println("the limit reached");
-                break;
-            }
-             freeValue = maxValue - stokValue;
-                System.out.println("our stok can accept: " + (freeValue - valueOfMetal));
-                System.out.println(freeValue - valueOfMetal);
-                System.out.println("enter value of metall in delivery: ");
-                int balanceValue = scanner.nextInt();
 
-            while (valueOfMetal > freeValue) {
-                break;
-            }
-             valueOfMetal++;
-            System.out.println("the stok is full");
+        if (value+valueOfMetal>maxValue) {
+            System.out.println("impossible to add");
+            System.out.println("our stock can accept: " + (maxValue - value));
+            continue;
         }
-    }
-}
+            if (valueOfMetal <= 5) {
+                System.out.println("impossible to add less than 5");
+                System.out.println("our stock can accept: " + (maxValue - value));
+                continue;
+            }
+
+            value = value + valueOfMetal;
+            System.out.println("our stock can accept: " + (maxValue-value));
+
+
+            }
+
+
+
+            }
+
+
+
+                //if (valueOfMetal <= maxValue) {
+                //System.out.println("our stok can accept: " + (freeValue - valueOfDelivery));
+            }
+
+
+
+
 
 
 

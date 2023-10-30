@@ -10,15 +10,19 @@ public class Task4 {
     // Пример1. после ввода 3,2,1: На экране должно вывестись следующее сообщение: “Федя будет идти в магазин в 14:00”
     // Пример2. после ввода 1,2,3: На экране должно вывестись следующее сообщение: “Маша будет идти в тренажерный зал в 14:00”
 
-    public static void main(String[] args) {
-        String[] names = {"Петя", "Маша”,“Алёна”,“Федя”, “Саша”, “Антон”, “Глеб" };
-        int[] time = {10, 12, 14, 16, 18, 20};
-        String[] place = {"школу”, “магазин”, “церковь”, “тренажерный зал”, “кино”, “поликлинику" };
-        String result = "%1$s будет идти в %2$s в %3$d";
-        int first;
-        Scanner scanner = new Scanner(System.in);
+   public static void main(String[] args) {
+
+       Scanner scanner = new Scanner(System.in);
+       String[] names = {"Петя", "Маша”,“Алёна”,“Федя”, “Саша”, “Антон”, “Глеб" };
+       int[] time = {10, 12, 14, 16, 18, 20};
+       String[] place = {"школу”, “магазин”, “церковь”, “тренажерный зал”, “кино”, “поликлинику" };
+       String result = "%1$s будет идти в %2$s в %3$d";
+
+
+       int first;
+
         do {
-            System.out.println("insert number: ");
+            System.out.println("insert number from 0 till 6: ");
             int x = scanner.nextInt();
             first = x;
         }
@@ -26,25 +30,23 @@ public class Task4 {
 
 
         int second;
-
         do {
-            System.out.println("insert number: ");
-            int x = scanner.nextInt();
+            System.out.println("insert number from 0 till 5: ");
+           int x = scanner.nextInt();
             second = x;
         }
-        while (second < 0 || second > names.length - 1);
-
+        while (second < 0 || second > time.length - 1);
 
         int third;
-
         do {
-            System.out.println("insert number: ");
-            int x = scanner.nextInt();
-            third = x;
+           System.out.println("insert number from 0 till 5: ");
+           int x = scanner.nextInt();
+           third = x;
         }
-        while (third < 0 || third > names.length - 1);
+        while (third < 0 || third > place.length - 1);
 
-        System.out.printf(result,names [first],place [third],time [second]);
+        System.out.printf(result,names[first],place[third],time[second]);
+
 
 }
     }
