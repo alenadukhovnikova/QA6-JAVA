@@ -21,7 +21,7 @@ public class Task1 {
 
         Random random = new Random();
 
-        for (int i=0; 1< manyArrays.length; i++ ) {
+        for (int i=0; i < manyArrays.length; i++ ) {
             for (int k = 0; k < manyArrays[i].length; k++ ) {
                 manyArrays[i][k] = random.nextInt(1000);}
 
